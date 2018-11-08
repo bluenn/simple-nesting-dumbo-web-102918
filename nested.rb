@@ -84,13 +84,17 @@ def adding_matz
 
 
     programmer_hash[:yukihiro_matsumoto] = {}
+    #here the key value pair is matsumoto = {}
     #programmer_hash[:yukihiro_matsumoto] = :known_for
     #programmer_hash[:yukihiro_matsumoto] = :languages
     #can't do that as am writing over instead of adding
     programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
-    programmer_hash[:yukihiro_matsumoto][:languages] = []
-    programmer_hash[:yukihiro_matsumoto][:languages][0] = "LISP"
-    programmer_hash[:yukihiro_matsumoto][:languages][1] = "C"
+    #when you add, you must add a key value pair. 
+    # i could have done programmer_hash[:yukihiro_matsumoto][:known_for] = ""
+    #and then added in "Ruby" on next try
+    programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C" ]
+    #programmer_hash[:yukihiro_matsumoto][:languages][0] = "LISP"
+    #programmer_hash[:yukihiro_matsumoto][:languages][1] = "C"
     programmer_hash
 end
 
