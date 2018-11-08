@@ -88,10 +88,10 @@ def adding_matz
 
     #notice how I can't do the following below as am writing over instead of adding
     # i don't have the key value pair set up right, I only have the key!!
-    # and it writes over itself as it thinks it is a value 
+    # and it writes over itself as it thinks it is a value
     #programmer_hash[:yukihiro_matsumoto] = :known_for
     #programmer_hash[:yukihiro_matsumoto] = :languages
-    
+
     programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
     #when you add, you must add a key value pair.
     # i could have done programmer_hash[:yukihiro_matsumoto][:known_for] = ""
@@ -123,7 +123,7 @@ def changing_alan
      #change what Alan Kay is :known_for to the value of the alans_new_info variable.
      alans_new_info = "GUI"
      programmer_hash[:alan_kay][:known_for] = alans_new_info
-
+     programmer_hash
 
 end
 
